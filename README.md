@@ -97,7 +97,7 @@ model.wv.most_similar('manila', topn=10)
 
 
 ## Example notebook (model usage example, evaluation, visualization)
-You can explore the embeddings through this [notebook from repo](https://github.com/danjohnvelasco/Filipino-Word-Embeddings/blob/main/example_notebook.ipynb) or view at [Google Colab](https://colab.research.google.com/drive/1mQhsPnI1m2d82ThNrzQmhMNRntxFkhx8?usp=sharing) for **better** viewing experience 😊
+You can explore the embeddings through this [notebook from repo](https://github.com/danjohnvelasco/Filipino-Word-Embeddings/blob/main/example_notebook.ipynb) or view at [Google Colab](https://colab.research.google.com/drive/1mQhsPnI1m2d82ThNrzQmhMNRntxFkhx8?usp=sharing) for **better** viewing experience 😎🍟
 
 Contents:
 * How to download the model
