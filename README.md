@@ -62,7 +62,7 @@ unzip word2vec_300dim_20epochs.zip
 ```
 
 ### How to load and use the model (word2vec)
-```
+```python
 # Example: load word2vec (300 dimensions)
 
 # Import dependencies
@@ -79,7 +79,7 @@ model.wv.most_similar('manila', topn=10)
 ```
 
 ### How to load and use the model (fastText)
-```
+```python
 # Example: load fastText (300 dimensions)
 
 # Import dependencies
