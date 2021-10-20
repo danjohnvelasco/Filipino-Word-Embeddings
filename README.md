@@ -5,9 +5,10 @@ This repository contains download links to pretrained static word embeddings in 
 
 ## Corpus Information
 The training corpus comprise of texts from Tagalog Wikipedia, news articles, and tweets.
-The corpus contains text in Filipino, English, and Taglish.
+The corpus contains texts in Filipino and Taglish (code-switching between Tagalog/Filipino and English).
 
 ### Data Source
+Combination of the following:
 * [WikiText-TL-39](https://github.com/jcblaisecruz02/Filipino-Text-Benchmarks#datasets)
 * [NewsPH-NLI](https://github.com/jcblaisecruz02/Filipino-Text-Benchmarks#datasets)
 * Unpublished Twitter dataset
@@ -33,9 +34,8 @@ After preprocessing, the corpus have:
 
 ## Models
 ### Training setup
-Used gensim v4.1.2 to train word2vec and fastText.
-Default hyperparameters were used except for `min_count=10` which minimum number of frequency for the word/token to be retained in the vocabulary.
-Both models were trained for 20 epochs.
+The Python library to train word2vec (Skip-Gram with Negative Sampling) and fastText is `gensim v4.1.2`. 
+Default hyperparameters of gensim v4.1.2 were used except for `min_count` which is minimum number of frequency for the word or token to be retained in the vocabulary. The `min_count` is set to 10 instead of 5 which means that words or tokens that appears less than 10 times in the whole training corpus will be excluded from the vocabulary and will be treated as "unknown word". Both models were trained for 20 epochs.
 
 ### Download via link
 | Model    | Dimensions | Vocab Size | Google Drive ID                   | Download URL (Size) |
