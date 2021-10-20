@@ -1,10 +1,10 @@
-# Filipino-Word-Embeddings
+# Filipino Word Embeddings
 ![3d_embeddings_space](images/banner.png)
 
 This repository contains download links to pretrained static word embeddings in Filipino.
 
 ## Corpus Information
-The training corpus comprise of texts from Tagalog Wikipedia, news articles, and tweets.
+The training corpus comprises texts from Tagalog Wikipedia, news articles, and tweets.
 The corpus contains texts in Filipino and Taglish (code-switching between Tagalog/Filipino and English).
 
 ### Data Source
@@ -35,7 +35,7 @@ After preprocessing, the corpus have:
 ## Models
 ### Training setup
 The Python library to train word2vec (Skip-Gram with Negative Sampling) and fastText is `gensim v4.1.2`. 
-Default hyperparameters of gensim v4.1.2 were used except for `min_count` which is minimum number of frequency for the word or token to be retained in the vocabulary. The `min_count` is set to 10 instead of 5 which means that words or tokens that appears less than 10 times in the whole training corpus will be excluded from the vocabulary and will be treated as "unknown word". Both models were trained for 20 epochs.
+Default hyperparameters of gensim v4.1.2 were used except for `min_count` which is the minimum number of frequency for the word or token to be retained in the vocabulary. The `min_count` is set to 10 instead of 5 which means that words or tokens that appear less than 10 times in the whole training corpus will be excluded from the vocabulary and will be treated as "unknown word". Both models were trained for 20 epochs.
 
 ### Download via link
 | Model    | Dimensions | Vocab Size | Google Drive ID                   | Download URL (Size) |
@@ -109,4 +109,4 @@ Contents:
 * 3D interactive plot of embedding space (Tensorboard)
 
 ## Notes
-These models/embeddings are not examined for biases. These models was trained for research or educational purposes. Please use with caution.
+These models/embeddings are not examined for biases. These models were trained for research and/or educational purposes. Please use with caution.
