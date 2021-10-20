@@ -86,7 +86,7 @@ model.wv.most_similar('manila', topn=10)
 from gensim.models import FastText
 
 # Load model
-model = Word2Vec.load("fasttext_300dim_20epochs.model")
+model = FastText.load("fasttext_300dim_20epochs.model")
 
 # Get embeddings for the word 'manila'
 model.wv['manila']
