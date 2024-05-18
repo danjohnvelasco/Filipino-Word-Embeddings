@@ -35,17 +35,17 @@ After preprocessing, the corpus have:
 ## Models
 ### Training setup
 The Python library to train word2vec (Skip-Gram with Negative Sampling) and fastText is `gensim v4.1.2`. 
-Default hyperparameters of gensim v4.1.2 were used except for `min_count` which is the minimum number of frequency for the word or token to be retained in the vocabulary. The `min_count` is set to 10 instead of 5 which means that words or tokens that appear less than 10 times in the whole training corpus will be excluded from the vocabulary and will be treated as "unknown word". Both models were trained for 20 epochs.
+Default hyperparameters of gensim v4.1.2 were used except for `min_count` which is the minimum number of frequency for the word or token to be retained in the vocabulary. The `min_count` is set to 10 instead of 5 which means that words or tokens that appear less than 10 times in the whole training corpus will be excluded from the vocabulary and will be treated as "unknown word". All models were trained for 20 epochs.
 
 ### Download via link
 | Model    | Dimensions | Vocab Size | Google Drive ID                   | Download URL (Size) |
 |----------|------------|------------|-----------------------------------|---------------------|
-| word2vec | 300        | 126,687    | 1-aG85UarQmQaxsiPnKa8ZQwww6_6gj5U | [link](https://drive.google.com/file/d/1-aG85UarQmQaxsiPnKa8ZQwww6_6gj5U/view?usp=sharing) (269.9 MB)                    |
-| word2vec | 200        | 126,687    | 1-bMzQKykfsYLGqVVvkj08gcYaFbexlwY | [link](https://drive.google.com/file/d/1-bMzQKykfsYLGqVVvkj08gcYaFbexlwY/view?usp=sharing) (180.2 MB)                    |
-| word2vec | 100        | 126,687    | 1-cQcqryrDYzjKSOY5-NUAgvb6S797QsI | [link](https://drive.google.com/file/d/1-cQcqryrDYzjKSOY5-NUAgvb6S797QsI/view?usp=sharing) (90.7 MB)                    |
-| fastText | 300        | 126,687    | 1-fhjOrPYLynSKnAXiZtpAMZd2Uahf4mo | [link](https://drive.google.com/file/d/1-fhjOrPYLynSKnAXiZtpAMZd2Uahf4mo/view?usp=sharing) (2.34 GB)                    |
-| fastText | 200        | 126,687    | 1-hO2uWwsc1pgw99BJ67LcF0sD21DMbQq | [link](https://drive.google.com/file/d/1-hO2uWwsc1pgw99BJ67LcF0sD21DMbQq/view?usp=sharing) (1.55 GB)                    |
-| fastText | 100        | 126,687    | 1-l9KEKNfilYlNAEl1EpBbu10nROcRtgJ | [link](https://drive.google.com/file/d/1-l9KEKNfilYlNAEl1EpBbu10nROcRtgJ/view?usp=sharing) (797.4 MB)                    |
+| word2vec | 300        | 126,687    | 11eeNuhgEIHCjRFMY9W68WykshTlHmMep | [link](https://drive.google.com/file/d/11eeNuhgEIHCjRFMY9W68WykshTlHmMep/view?usp=drive_link) (269.9 MB)                    |
+| word2vec | 200        | 126,687    | 1LcirDe1tbPu2mBhkGQjzTfnEYrhbZcwCY | [link](https://drive.google.com/file/d/1LcirDe1tbPu2mBhkGQjzTfnEYrhbZcwC/view?usp=drive_link) (180.2 MB)                    |
+| word2vec | 100        | 126,687    | 17XPgQZ7z-jwNgYKHiUvztyVABMLXPqjW | [link](https://drive.google.com/file/d/17XPgQZ7z-jwNgYKHiUvztyVABMLXPqjW/view?usp=drive_link) (90.7 MB)                    |
+| fastText | 300        | 126,687    | 12APTxpR9GIbdnawxrn-UahwEZbqxVHFw | [link](https://drive.google.com/file/d/12APTxpR9GIbdnawxrn-UahwEZbqxVHFw/view?usp=drive_link) (2.34 GB)                    |
+| fastText | 200        | 126,687    | 184LscA1LRu5L6SUEVvaAq1STpr7O7iuT | [link](https://drive.google.com/file/d/184LscA1LRu5L6SUEVvaAq1STpr7O7iuT/view?usp=drive_link) (1.55 GB)                    |
+| fastText | 100        | 126,687    | 1L8k32TO75J6X0Rzu-SrXQAVz96LFVqvV | [link](https://drive.google.com/file/d/1L8k32TO75J6X0Rzu-SrXQAVz96LFVqvV/view?usp=drive_link) (797.4 MB)                    |
 
 ### Download via terminal
 ```
@@ -55,7 +55,7 @@ Default hyperparameters of gensim v4.1.2 were used except for `min_count` which 
 pip install gdown
 
 # Download data to current directory (you can get the id from the table above)
-gdown --id 1-aG85UarQmQaxsiPnKa8ZQwww6_6gj5U
+gdown --id 11eeNuhgEIHCjRFMY9W68WykshTlHmMep
 
 # Extract/Unzip to current directory
 unzip word2vec_300dim_20epochs.zip
