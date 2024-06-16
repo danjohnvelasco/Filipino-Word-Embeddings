@@ -110,3 +110,13 @@ Contents:
 
 ## Notes
 These models/embeddings are not examined for biases. These models were trained for research and/or educational purposes. Please use with caution.
+
+## If you used this work in academic contexts, please cite as:
+```
+@misc{velasco2021filwembs,
+  author = {Dan John Velasco},
+  title  = {{Filipino Word Embeddings}},
+  year   = {2021},
+  howpublished = {\url{https://github.com/danjohnvelasco/Filipino-Word-Embeddings}},
+}
+```
